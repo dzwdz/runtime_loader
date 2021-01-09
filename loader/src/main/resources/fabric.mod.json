@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "runtime_loader",
+  "version": "${version}",
+  "name": "Runtime Loader",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/runtime_loader/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "dzwdz.runtime_loader.RuntimeLoader"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.10.8",
+    "fabric": "*",
+    "minecraft": "1.16.4"
+  }
+}
