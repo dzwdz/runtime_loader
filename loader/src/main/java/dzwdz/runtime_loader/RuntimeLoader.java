@@ -14,9 +14,8 @@ import static com.mojang.brigadier.arguments.StringArgumentType.string;
 
 public class RuntimeLoader implements ModInitializer {
     public static void loadMod(String url) throws Exception {
-        String path = "file:///hdd/repo/current/runtime_loader/testmod/build/libs/testmod-0.0.0-dev.jar";
         URLClassLoader child = new URLClassLoader(
-                new URL[]{new URL(path)},
+                new URL[]{new URL(url)},
                 RuntimeLoader.class.getClassLoader()
         );
         Class<?> classToLoad = Class.forName("dzwdz.testmod.Testmod", true, child);
